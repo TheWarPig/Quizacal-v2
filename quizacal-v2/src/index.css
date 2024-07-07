@@ -9,6 +9,7 @@ body{
 }
 
 main{
+  margin: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +123,26 @@ main{
 
 .cheked-p{
   color: #293264;
-  font-size: 1r`em;
+  font-size: 1rem;
   font-weight: 700;
 }
 
+@media (max-width: 900px){
+
+  main{
+    height:unset;
+    padding: 30px 0;
+  }
+
+  .answers-div{
+    flex-direction: column;
+  }
+  .answers-div button{
+    width: fit-content;
+  }
+
+  main > img{
+    display: none;
+  }
+  
+}
