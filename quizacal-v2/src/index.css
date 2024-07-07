@@ -45,22 +45,32 @@ main{
 }
 
 .start-screen p{
+  margin-bottom: 30px;
   font-weight: 400;
   color: #293264;
 }
 
-.start-screen button{
-  margin-top: 30px;
+.button{
+  font-family: inherit;
   width: 193px;
   height: 52px;
   border-radius: 15px;
   border: none;
   background-color: #4D5B9E;
   color: #F5F7FB;
-  font-weight: 500;
+  font-weight: 600;
+  cursor: pointer;
 }
 
+
+
 /* Questions Screen */
+
+.questions-div{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
 .question{
   display: flex;
@@ -84,14 +94,35 @@ main{
 }
 
 .answers-div button{
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
   min-width: 66px;
   height: 21px;
-  border: 0.79px solid #4D5B9E;
+  color: #293264;
+  font-weight: 500;
   background-color: #F5F7FB;
   border-radius: 8px;
+  border: none;
 }
 
 .answers-div button:hover{
   cursor: pointer;
   background-color: #DDF2FF;
 }
+
+.checked-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cheked-p{
+  color: #293264;
+  font-size: 1r`em;
+  font-weight: 700;
+}
+
